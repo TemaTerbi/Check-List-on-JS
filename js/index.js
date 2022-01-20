@@ -14,6 +14,7 @@ input.addEventListener("keypress", function (event) {
       this.innerHTML = "";
 
       let edit = document.createElement("input");
+      edit.classList.add("input__edit");
       edit.value = text;
       this.appendChild(edit);
 

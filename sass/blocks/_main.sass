@@ -1,6 +1,7 @@
 .main
   display: flex
   justify-content: center
+  margin-top: 50px
   &__list
     padding: 0
     display: flex
@@ -10,7 +11,9 @@
     text-align: center
     background-color: #ffcf66
     padding: 20px
-    min-height: 500px
+    min-height: 700px
+    min-width: 900px
+    border-radius: 15px
   &__tasks
     min-width: 400px
 
@@ -20,7 +23,7 @@
     justify-content: space-between
     align-items: center
     padding: 15px
-    border-radius: 30px
+    margin-bottom: 10px
     &:hover
       background-color: #8f8f8f93
       transition: 0.3s
@@ -62,17 +65,29 @@
 #list .line
   border-radius: 30px
   background-color: #a6ff94
-
 .task
   font-size: 20px
   cursor: pointer
   min-width: 100px
+  display: flex
+  justify-content: center
 
 li
   list-style: none
 
+.input
+  margin-bottom: 50px
+  &__area
+    padding: 10px
+    width: 500px
+    font-size: 25px
+  &__edit
+    padding: 5px
+    font-size: 15px
+
 input
   border: none
-  padding: 10px
-  width: 300px
-  font-size: 25px
+  outline: none
+
+body
+  background-color: #353535
