@@ -1,0 +1,126 @@
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__list {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__wrapper {
+  text-align: center;
+  background-color: #ffcf66;
+  padding: 20px;
+  min-height: 500px;
+}
+
+.main__tasks {
+  min-width: 400px;
+}
+
+.list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  border-radius: 30px;
+}
+
+.list__item:hover {
+  background-color: #8f8f8f93;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#list .remove {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 0.4px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #ff6161;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+#list .remove:hover {
+  color: black;
+  background-color: #ff0000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#list .done {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 0.4px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #a7ff84;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+#list .done:hover {
+  color: black;
+  background-color: #48ff00;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#list .line {
+  border-radius: 30px;
+  background-color: #a6ff94;
+}
+
+.task {
+  font-size: 20px;
+  cursor: pointer;
+  min-width: 100px;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  border: none;
+  padding: 10px;
+  width: 300px;
+  font-size: 25px;
+}
+/*# sourceMappingURL=style.css.map */
