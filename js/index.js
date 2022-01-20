@@ -53,4 +53,3 @@ input.addEventListener("keypress", function (event) {
     this.value = "";
   }
 });
-// console.log(input);
