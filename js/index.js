@@ -2,7 +2,7 @@ let input = document.querySelector("#input");
 let list = document.querySelector("#list");
 
 input.addEventListener("keypress", function (event) {
-  if (event.key == "Enter") {
+  if (event.key == "Enter" && this.value != "") {
     let li = document.createElement("li");
     li.classList.add("list__item");
 
@@ -44,7 +44,6 @@ input.addEventListener("keypress", function (event) {
     mark.innerHTML = "сделано";
     mark.addEventListener("click", function () {
       this.parentElement.classList.add("line");
-      this.appendChild.classList.remove("done");
     });
     li.appendChild(mark);
 
