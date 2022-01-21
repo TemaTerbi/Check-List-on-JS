@@ -8,28 +8,30 @@ input.addEventListener("keypress", function (event) {
 
     let task = document.createElement("span");
     task.classList.add("task");
-    task.innerHTML = this.value;
+    task.innerText = this.value;
     task.addEventListener("dblclick", function () {
-      let text = this.innerHTML;
-      this.innerHTML = "";
+      if (!li.classList.contains("line")) {
+        let text = this.innerHTML;
+        this.innerText = "";
 
-      let edit = document.createElement("input");
-      edit.classList.add("input__edit");
-      edit.value = text;
-      this.appendChild(edit);
+        let edit = document.createElement("input");
+        edit.classList.add("input__edit");
+        edit.value = text;
+        this.appendChild(edit);
 
-      let newtext = this;
-      edit.addEventListener("keypress", function (event) {
-        if (event.key == "Enter") {
-          newtext.innerHTML = this.value;
-        }
-      });
+        let newtext = this;
+        edit.addEventListener("keypress", function (event) {
+          if (event.key == "Enter") {
+            newtext.innerText = this.value;
+          }
+        });
+      }
     });
     li.appendChild(task);
 
     let remove = document.createElement("span");
     remove.classList.add("remove");
-    remove.innerHTML = "удалить";
+    remove.innerText = "удалить";
     remove.addEventListener("click", function (e) {
       const btn = e.target.closest(".remove");
       if (!btn) {
@@ -41,9 +43,10 @@ input.addEventListener("keypress", function (event) {
 
     let mark = document.createElement("span");
     mark.classList.add("done");
-    mark.innerHTML = "сделано";
+    mark.innerText = "сделано";
     mark.addEventListener("click", function () {
       this.parentElement.classList.add("line");
+      this.remove();
     });
     li.appendChild(mark);
 
